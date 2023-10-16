@@ -1,0 +1,33 @@
+@import "./variable.css";
+@import "./default.css";
+@import "./font.css";
+@import "./navbar.css";
+
+
+/* Landing */
+
+.landing {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./../images/bg-landing.jfif), no-repeat center center;
+  background-size: cover;
+  /* padding: 9rem 0; */
+  height: calc(100vh - 108.8px);
+  text-align: center;
+  background-attachment: fixed;
+  color: var(--white-color);
+}
+.landing__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20rem;
+}
+.landing__title {
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+.landing__subtitle {
+  font-size: 1.8rem;
+}
