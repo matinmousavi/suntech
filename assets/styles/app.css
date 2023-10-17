@@ -3,7 +3,6 @@
 @import "./font.css";
 @import "./navbar.css";
 
-
 /* Landing */
 
 .landing {
@@ -30,4 +29,114 @@
 }
 .landing__subtitle {
   font-size: 1.8rem;
+}
+
+/* Service */
+
+.service {
+  background-image: url(./../images/bg-1.jpg);
+  /* background-color: #444; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--white-color);
+  padding: 10rem 0;
+}
+.service__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service__right {
+  width: 50%;
+  padding: 0 5rem 0 17rem;
+}
+.service__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.service__text {
+  margin-top: 2rem;
+  text-align: justify;
+  color: #7b868a;
+  font-size: 1.6rem;
+}
+.service__btn {
+  margin: 5rem 0;
+  width: 30%;
+  border: 2px solid var(--secondary-color);
+  margin-right: auto;
+  margin-left: 4rem;
+  text-align: center;
+  padding: 1rem 0;
+  transition: all 200ms linear;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+.service__btn:hover {
+  background-color: var(--secondary-color);
+}
+.service__btn-link {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.service__btn:hover .service__btn-link {
+  color: var(--dark-color);
+}
+.service__left {
+  width: 50%;
+}
+.service__accordion {
+}
+.service__accordion-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  /* background-color: #7b868a; */
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
+}
+
+.service__accordion-item::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: -1rem;
+  z-index: 11;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(139, 139, 139, 1) 45%,
+    rgba(139, 139, 139, 1) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.service__accordion-text {
+  position: relative; 
+}
+.service__accordion-text::before {
+  content: "";
+  position: absolute;
+  top: -0.8rem;
+  right: -1rem;
+  list-style: circle;
+  font-size: 3rem;
+  width: 100%;
+  display: list-item;
+  height: 1rem;
+}
+.service__accordion-text:hover::before{
+  list-style: disc;
 }
