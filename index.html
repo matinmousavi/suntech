@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/vendor/Bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/vendor/FontAwesome5/all.min.css" />
+    <link rel="stylesheet" href="./assets/vendor/SwiperJs/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/styles/reset.css" />
     <link rel="stylesheet" href="./assets/styles/app.css" />
   </head>
@@ -64,7 +65,7 @@
     </section>
 
     <!-- Services -->
-    <section class="service">
+    <section class="service" id="service">
       <div class="container">
         <div class="service__content">
           <div class="service__right">
@@ -79,7 +80,7 @@
               <a href="#" class="service__btn-link">همه خدمات</a>
             </div>
           </div>
-          <div class="service__left" id="service">
+          <div class="service__left">
             <div class="service__accordion">
               <div class="service__accordion-item">
                 <span class="service__accordion-text">طراحی وب سایت شخصی</span>
@@ -90,7 +91,9 @@
                 <i class="fas fa-chevron-left service__accordion-icon"></i>
               </div>
               <div class="service__accordion-item">
-                <span class="service__accordion-text">طراحی وب سایت فروشگاهی</span>
+                <span class="service__accordion-text"
+                  >طراحی وب سایت فروشگاهی</span
+                >
                 <i class="fas fa-chevron-left service__accordion-icon"></i>
               </div>
               <div class="service__accordion-item">
@@ -98,7 +101,9 @@
                 <i class="fas fa-chevron-left service__accordion-icon"></i>
               </div>
               <div class="service__accordion-item">
-                <span class="service__accordion-text">طراحی وبسایت خلاقانه</span>
+                <span class="service__accordion-text"
+                  >طراحی وبسایت خلاقانه</span
+                >
                 <i class="fas fa-chevron-left service__accordion-icon"></i>
               </div>
               <div class="service__accordion-item">
@@ -110,7 +115,9 @@
                 <i class="fas fa-chevron-left service__accordion-icon"></i>
               </div>
               <div class="service__accordion-item">
-                <span class="service__accordion-text">بهینه سازی موتور های جست و جو</span>
+                <span class="service__accordion-text"
+                  >بهینه سازی موتور های جست و جو</span
+                >
                 <i class="fas fa-chevron-left service__accordion-icon"></i>
               </div>
               <div class="service__accordion-item">
@@ -123,6 +130,59 @@
       </div>
     </section>
 
+    <!-- About Us -->
+    <section class="about-us" id="about-us">
+      <div class="container">
+        <div class="about-us__content">
+          <div class="row">
+            <div class="col-6 about-us__right">
+              <div class="swiper mySwiper about-us__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide about-us__swiper-slide">
+                    <img src="./assets/images/courses/matin-mousavi.jpg" class="about-us__swiper-slide--image" />
+                  </div>
+                  <div class="swiper-slide about-us__swiper-slide">
+                    <img src="./assets/images/courses/haniye-shariatmadari.jpg" class="about-us__swiper-slide--image" />
+                  </div>
+                  <div class="swiper-slide about-us__swiper-slide">
+                    <img src="./assets/images/courses/matin-raisi.jpg" class="about-us__swiper-slide--image" />
+                  </div>
+                  <div class="swiper-slide about-us__swiper-slide">
+                    <img src="./assets/images/courses/monavareh-mohtashami.jpg" class="about-us__swiper-slide--image" />
+                  </div>
+                  <div class="swiper-slide about-us__swiper-slide">
+                    <img src="./assets/images/courses/reza-poudineh.jpg" class="about-us__swiper-slide--image" />
+                  </div>
+                  <div class="swiper-slide about-us__swiper-slide">
+                    <img src="./assets/images/courses/salman-haghnavazi.jpg" class="about-us__swiper-slide--image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 about-us__left">
+              <h3 class="about-us__title">تیم ما</h3>
+              <p class="about-us__text">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
+                زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+                دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+                پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="./assets/vendor/FontAwesome5/all.min.js"></script>
+    <script src="./assets/vendor/SwiperJs/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/Bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
   </body>
 </html>
