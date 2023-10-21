@@ -2,6 +2,7 @@
 @import "./default.css";
 @import "./font.css";
 @import "./navbar.css";
+@import "./footer.css";
 
 /* Landing */
 
@@ -11,7 +12,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(./../images/bg-landing.jfif), no-repeat center center;
   background-size: cover;
-  /* padding: 9rem 0; */
   height: calc(100vh - 108.8px);
   text-align: center;
   background-attachment: fixed;
@@ -35,7 +35,6 @@
 
 .service {
   background-image: url(./../images/bg-1.jpg);
-  /* background-color: #444; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -94,8 +93,6 @@
 .service__left {
   width: 50%;
 }
-.service__accordion {
-}
 .service__accordion-item {
   position: relative;
   display: flex;
@@ -148,8 +145,6 @@
   background-size: cover;
   background-attachment: fixed;
 }
-.about-us__content {
-}
 .about-us__right {
   padding-left: 8rem;
 }
@@ -163,8 +158,6 @@
   font-size: 1.4rem;
   text-align: justify;
   color: #7b868a;
-}
-.about-us__left {
 }
 .about-us__swiper {
   width: 100%;
