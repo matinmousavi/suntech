@@ -24,11 +24,13 @@
   height: 20rem;
 }
 .landing__title {
-  font-size: 3.4rem;
+  font-size: 3.5rem;
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 .landing__subtitle {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: var(--primary-color);
 }
 
 /* Service */
@@ -123,17 +125,21 @@
 }
 .service__accordion-text::before {
   content: "";
+  list-style: ' ☀ ';
   position: absolute;
-  top: -0.8rem;
+  transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  -moz-transition: all 100ms linear;
+  -ms-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
   right: -1rem;
-  list-style: circle;
-  font-size: 3rem;
+  font-size: 1.8rem;
   width: 100%;
   display: list-item;
   height: 1rem;
 }
 .service__accordion-text:hover::before {
-  list-style: disc;
+  color: var(--primary-color);
 }
 
 /* About Us */
